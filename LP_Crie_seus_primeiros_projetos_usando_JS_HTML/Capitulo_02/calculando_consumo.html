@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Alcool ou gasolina ?</h3>
+    <script>
+        let tanque = 40;
+        let caminhoComGasolina = 480;
+        let caminhoComAlcool = 300;
+        let consumoDeGasolina = caminhoComGasolina / 40;
+        let consumoDeAlcool = caminhoComAlcool / 40;
+        let precoGasolinaPorKm = consumoDeGasolina/2.90;
+        let precoAlcoolPorkm = consumoDeAlcool/2.40;
+        let pularLinha = (nLinhas = 1) => { 
+            for(let i = 0 ; i < parseInt(nLinhas);i++){
+                document.write("<hr>");
+            }
+
+        };
+        let mostrar = (frase = 'Não foi passado nenhuma frase', qtdLinha = 1) => {
+            document.write("<big>" + frase +"</big>");
+            pularLinha(qtdLinha);
+        }
+
+        mostrar(('Seu consumo de gasolina é' + consumoDeGasolina), 3)
+        console.log("Está mensagem aparece apenas no log")
+
+        
+        // document.write("Seu consumo de gasolina é ", consumoDeGasolina);
+        // pularLinha();
+        // document.write("Seu consumo de alcool é " + consumoDeAlcool.toPrecision(3));
+        // pularLinha(2);
+        // document.write("O preço da gasolina por KM é ",precoGasolinaPorKm.toFixed(2) );
+        // pularLinha(2);
+        // document.write("O preço do alcool por km é ", precoAlcoolPorkm.toFixed(2));
+      
+    </script>
+</body>
+</html>
