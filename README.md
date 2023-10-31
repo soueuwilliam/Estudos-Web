@@ -1,2 +1,2 @@
 # ESTUDOS WEB
-Repositório dedicado a estudos dentro da programação python
+Repositório dedicado a estudos dentro da programação web
