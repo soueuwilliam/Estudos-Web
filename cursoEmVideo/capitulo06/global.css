@@ -1,0 +1,7 @@
+.img-estudos {
+  --size-img : 70%;
+  width: var(--size-img);
+  height: var(--size-img);
+ margin: auto;
+display: block;
+}
